@@ -1,16 +1,26 @@
 * {
-  
+ 
 }
 
-ul {
+.navlinks {
   display: flex;
   list-style: none;
   justify-content: flex-end;
+
+}
+
+ul {
   border-bottom: 3px solid black;
 }
 
 li {
   margin: 10px;
+}
+
+.title {
+  font-size: 50px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-right: auto;
 }
 
 a {
@@ -45,7 +55,6 @@ h1 {
   width: 50%;
 }
 
-
 .wrapper-img {  
   overflow: hidden; 
 }
@@ -58,7 +67,5 @@ h1 {
   transform: scale(1.1);
 }
 
-.title {
-  font-size: 30px;
-  text-align: start;
-}
+
+
