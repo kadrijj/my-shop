@@ -53,9 +53,38 @@ h1 {
   width: 80%;
   padding: 10px;
 }
+
+.shopitem{
+  align-content: center;
+  border-style: solid;
+  border-color: black;
+}
 .shopitem, img {
   width: 50%;
 }
+
+.etsybutton {
+  text-align: center;
+  font-size: 15px;
+  color: whitesmoke;
+  margin: 0 0 0 100px;
+  position: relative;
+  background-color: black;
+  border: none;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.etsybutton:hover {
+    background:#fff;
+    box-shadow:0px 2px 10px 5px #97B1BF;
+    color: black;
+ }
 
 .wrapper-img {  
   overflow: hidden; 
