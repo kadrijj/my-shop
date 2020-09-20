@@ -38,6 +38,8 @@ h1 {
 
 .footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   justify-content: flex-end;
   border-top: 3px solid black;
@@ -46,7 +48,7 @@ h1 {
 
 .shop {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   width: 80%;
   padding: 10px;
