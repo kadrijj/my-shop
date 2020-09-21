@@ -8,7 +8,8 @@ function Contact() {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'WvAzMkmobmY8Uth3Uf1js')
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target,
+            'user_WvAzMkmobmY8Uth3Uf1js')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -18,14 +19,16 @@ function Contact() {
 
     return (
         <form className="contact-form" onSubmit={sendEmail}>
-            <input type="hidden" name="contact_number" />
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
+            <div className="form-input"> <input type="hidden" name="contact_number" />
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+            </div>
+            <div className="form-input"><label>Message</label>
+                <textarea name="message" />
+            </div>
+            <input className="submit-button" type="submit" value="Send" />
         </form>
     );
 }
