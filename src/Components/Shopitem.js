@@ -21,15 +21,15 @@ class Shopitem extends Component {
     }
 
     render() {
-        console.log(this.props)
+        console.log(this.state.images)
         return (
             <>
                 <div className="shopitem">
                     {this.state.images && this.state.images.results.map(image => <img src={image.url_fullxfull} />)}
                     <h3>{this.props.productInfo.title}</h3>
                     <p>{this.props.productInfo.description}</p>
-                    <p>{this.props.productInfo.quantity}</p>
-                    <p>{this.props.productInfo.price + this.props.productInfo.currency_code}</p>
+                    <p>{this.props.productInfo.price + " " + this.props.productInfo.currency_code}</p>
+                    <span className="badge">free delivery</span>
                     <a href={this.props.productInfo.url}><button className="etsybutton">Buy on Etsy</button></a>
                 </div>
             </>
