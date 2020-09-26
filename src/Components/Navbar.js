@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
+import SideBar from "./Sidebar";
 
 const Navbar = () => {
     return (
@@ -12,6 +13,10 @@ const Navbar = () => {
                     <li><NavLink activeClassName='active' to='/contact'>Contact Us</NavLink></li>
                 </div>
             </ul>
+            <div className="mobile-navbar">
+                <h1>Chido</h1>
+                <SideBar className="sidebar" pageWrapId={"page-wrap"} outerContainerId={"App"} />
+            </div>
         </>
     )
 }
