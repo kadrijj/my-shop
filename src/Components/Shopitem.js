@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 class Shopitem extends Component {
     constructor(props) {
@@ -21,11 +24,19 @@ class Shopitem extends Component {
     }
 
     render() {
-        console.log(this.state.images)
+
+        const settings = {
+            arrows: true,
+            dots: true,
+            className: "carousel_div",
+            slidesToShow: 1,
+        }
         return (
             <>
                 <div className="shopitem">
-                    {this.state.images && this.state.images.results.map(image => <img src={image.url_fullxfull} />)}
+                    <Slider {...settings}>
+                        {this.state.images && this.state.images.results.map(image => <img src={image.url_fullxfull} />)}
+                    </Slider>
                     <h3>{this.props.productInfo.title}</h3>
                     <p>{this.props.productInfo.description}</p>
                     <p>{this.props.productInfo.price + " " + this.props.productInfo.currency_code}</p>
