@@ -227,7 +227,6 @@
     font-size: 15px;
     color: whitesmoke;
     margin: 0 0 0 100px;
-    position: relative;
     background-color: black;
     border: none;
     border-radius: 15px;
@@ -244,6 +243,10 @@
       background:#fff;
       box-shadow:0px 2px 10px 5px #97B1BF;
       color: black;
+   }
+
+   .shopitem-info {
+     align-self: flex-start;
    }
   
   .wrapper-img {  
