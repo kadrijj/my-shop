@@ -61,8 +61,9 @@
     align-items: center;
     list-style: none;
     justify-content: flex-end;
-    border-top: 1px solid black;
+    border-top: 3px solid black;
     border-bottom: none;
+    padding: 10px;
   }
 
   .footer, a {
@@ -78,8 +79,70 @@
   .mobile-navbar {
     border-bottom: 3px solid black;
   }
-}
 
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .centered-contact {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=email] {
+    padding: 6px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+  
+  .contact-button {
+    text-align: center;
+    font-size: 15px;
+    color: whitesmoke;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .contact-instagram {
+    color: #c32aa3;
+  }
+  
+  .contact-instagram:hover {
+    color: #f46f30;
+  }
+
+  .contact-instagram {
+    font-size:  13px;
+  }
+
+}
 
 
 @media only screen and (min-width: 600px)
@@ -95,7 +158,7 @@
   }
   
   ul {
-    border-bottom: 3px solid black;
+    border-bottom: 1px solid black;
   }
   
   li {
@@ -127,7 +190,7 @@
     align-items: center;
     list-style: none;
     justify-content: flex-end;
-    border-top: 3px solid black;
+    border-top: 1px solid black;
     border-bottom: none;
   }
   
@@ -135,8 +198,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 80%;
+    align-content: center;
     padding: 10px;
+    width: 80%;
+    margin: auto;
   }
   
   .shopitem{
@@ -227,7 +292,6 @@
 
   .slick-next:before {
     color: black !important;
-  
   }
   
   .contact-container {
@@ -241,11 +305,12 @@
   
   .centered-contact {
     height: 80vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   input[type=email], textarea {
     width: 100%;
     padding: 12px;
@@ -269,7 +334,7 @@
     border: none;
     border-radius: 15px;
     padding: 10px;
-    width: 10%;
+    width: 20%;
     text-decoration: none;
   }
   .contact-instagram {
@@ -283,5 +348,43 @@
   .sidebar {
     display: none;
   }
+
+  .mobile-navbar {
+    display: none;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .main-content {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    align-content: center;
+  }
+
+  .blog-img {
+    width: 100%;
+  }
+
+  .blog-slider {
+    width: 25%;
+  }
+
+  .blog-text {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .slick-dots {
+    border-bottom: none;
+  }
+
 }
 

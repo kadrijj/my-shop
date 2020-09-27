@@ -26,7 +26,7 @@ class Contact extends React.Component {
                             <label>Your Email:</label>
                             <input type="email" name="email" />
                             <label>Message:</label>
-                            <textarea id="subject" name="subject" placeholder="Write something here..."></textarea>
+                            <textarea id="subject" name="subject"></textarea>
                             {status === "SUCCESS" ? <p>Thank you for sending us a message! We will get back to you very soon!</p> : <button className="contact-button">Send</button>}
                             {status === "ERROR" && <p>Ooops! There was an error. Did you insert an email address?</p>}
                         </form>

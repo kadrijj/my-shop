@@ -8,7 +8,7 @@ const Footer = () => {
             <li><NavLink activeClassName='active' exact to='/'>Home</NavLink></li>
             <li><NavLink activeClassName='active' to='/shop'>Shop</NavLink></li>
             <li><NavLink activeClassName='active' to='/contact'>Contact Us</NavLink></li>
-            <li><SocialIcon url="https://www.instagram.com/jkadrij/" /></li>
+            <li className="social-icon"><SocialIcon url="https://www.instagram.com/jkadrij/" /></li>
         </ul>
     )
 

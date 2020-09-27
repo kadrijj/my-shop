@@ -8,9 +8,9 @@ const Navbar = () => {
             <ul>
                 <div className="navlinks">
                     <div className="title">Chido</div>
-                    <li><NavLink activeClassName='active' exact to='/'>Home</NavLink></li>
-                    <li><NavLink activeClassName='active' to='/shop'>Shop</NavLink></li>
-                    <li><NavLink activeClassName='active' to='/contact'>Contact Us</NavLink></li>
+                    <li><NavLink activeClassName='active' exact to='/'>HOME</NavLink></li>
+                    <li><NavLink activeClassName='active' to='/shop'>SHOP</NavLink></li>
+                    <li><NavLink activeClassName='active' to='/contact'>CONTACT US</NavLink></li>
                 </div>
             </ul>
             <div className="mobile-navbar">

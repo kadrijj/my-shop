@@ -27,7 +27,7 @@ class Shopitem extends Component {
 
         const settings = {
             arrows: true,
-            dots: true,
+            dots: false,
             className: "carousel_div",
             slidesToShow: 1,
         }
