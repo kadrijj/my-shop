@@ -17,20 +17,19 @@ class Contact extends React.Component {
                 <div className="centered-contact">
                     <div className="contact-container">
                         <h3>Contact Us</h3>
-                        <p>We'd love to hear from you! Please fill in the form below and we will get back to you shortly. We are also available on Instagram - let's connect in the DMs!</p>
+                        <p>We'd love to hear from you! Fill in the form below and we will get back to you shortly. We are also available <a className="contact-instagram" href="https://www.instagram.com/jkadrij/">@Instagram</a> - let's connect in the DMs!</p>
                         <form
                             onSubmit={this.submitForm}
                             action="https://formspree.io/mjvpvnld"
                             method="POST"
                         >
-                            <label>Email:</label>
+                            <label>Your Email:</label>
                             <input type="email" name="email" />
                             <label>Message:</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-                            {status === "SUCCESS" ? <p>Thank you for sending us a message! We will get back to you very soon!</p> : <button className="submit-button">Send</button>}
+                            <textarea id="subject" name="subject"></textarea>
+                            {status === "SUCCESS" ? <p>Thank you for sending us a message! We will get back to you very soon!</p> : <button className="contact-button">Send</button>}
                             {status === "ERROR" && <p>Ooops! There was an error. Did you insert an email address?</p>}
                         </form>
-                        <li><SocialIcon url="https://www.instagram.com/jkadrij/" /></li>
                     </div>
                 </div>
             </>

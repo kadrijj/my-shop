@@ -27,7 +27,7 @@ class Shopitem extends Component {
 
         const settings = {
             arrows: true,
-            dots: true,
+            dots: false,
             className: "carousel_div",
             slidesToShow: 1,
         }
@@ -37,11 +37,13 @@ class Shopitem extends Component {
                     <Slider {...settings}>
                         {this.state.images && this.state.images.results.map(image => <img src={image.url_fullxfull} />)}
                     </Slider>
-                    <h3>{this.props.productInfo.title}</h3>
-                    <p>{this.props.productInfo.description}</p>
-                    <p>{this.props.productInfo.price + " " + this.props.productInfo.currency_code}</p>
-                    <span className="badge">free delivery</span>
-                    <a href={this.props.productInfo.url}><button className="etsybutton">Buy on Etsy</button></a>
+                    <div className="shopitem-info">
+                        <h3>{this.props.productInfo.title}</h3>
+                        <p>{this.props.productInfo.description}</p>
+                        <p>{this.props.productInfo.price + " " + this.props.productInfo.currency_code}</p>
+                        <span className="badge">free delivery</span>
+                        <a href={this.props.productInfo.url}><button className="etsybutton">Buy on Etsy</button></a>
+                    </div>
                 </div>
             </>
         )
