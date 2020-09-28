@@ -24,7 +24,6 @@ class Shopitem extends Component {
     }
 
     render() {
-
         const settings = {
             arrows: true,
             dots: false,
@@ -51,7 +50,3 @@ class Shopitem extends Component {
 }
 
 export default Shopitem;
-
-//<a href="https://react.school" target="_blank">
-//<Button> Link Button </Button>
-//</a>
