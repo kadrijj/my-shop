@@ -16,7 +16,7 @@ class Shopitem extends Component {
     }
 
     fetchImages = () => {
-        fetch(`https://cors-anywhere.herokuapp.com/https://openapi.etsy.com/v2/listings/${this.props.productInfo.listing_id}/images?api_key=qp5jp1jc3esdquq9jl7u8c8p `)
+        fetch(`/v2/listings/${this.props.productInfo.listing_id}/images?api_key=qp5jp1jc3esdquq9jl7u8c8p `)
             .then(res => res.json())
             .then(data => {
                 this.setState({ images: data })
@@ -24,7 +24,6 @@ class Shopitem extends Component {
     }
 
     render() {
-
         const settings = {
             arrows: true,
             dots: false,
@@ -39,11 +38,12 @@ class Shopitem extends Component {
                     </Slider>
                     <div className="shopitem-info">
                         <h3>{this.props.productInfo.title}</h3>
+                        <div><span className="badge">free delivery</span></div>
                         <p>{this.props.productInfo.description}</p>
                         <p>{this.props.productInfo.price + " " + this.props.productInfo.currency_code}</p>
-                        <span className="badge">free delivery</span>
-                        <a href={this.props.productInfo.url}><button className="etsybutton">Buy on Etsy</button></a>
                     </div>
+                    <div><a href={this.props.productInfo.url}>
+                        <button className="etsybutton">Buy on Etsy</button></a></div>
                 </div>
             </>
         )
@@ -51,7 +51,3 @@ class Shopitem extends Component {
 }
 
 export default Shopitem;
-
-//<a href="https://react.school" target="_blank">
-//<Button> Link Button </Button>
-//</a>

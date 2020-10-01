@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Shopitem from "./Shopitem";
+import Loading from "./Loading";
+import data from "./data";
 
 class Shop extends Component {
     constructor(props) {
@@ -14,7 +16,7 @@ class Shop extends Component {
     }
 
     fetchData = () => {
-        fetch(`https://cors-anywhere.herokuapp.com/https://openapi.etsy.com/v2/shops/24041469/listings/active?api_key=qp5jp1jc3esdquq9jl7u8c8p`)
+        fetch(`/v2/shops/24041469/listings/active?api_key=qp5jp1jc3esdquq9jl7u8c8p`)
             .then(res => res.json())
             .then(data => {
                 this.setState({ data })
@@ -25,11 +27,13 @@ class Shop extends Component {
         return (
             <div className="shop">
                 {
-                    this.state.data && this.state.data.results.map(product => <Shopitem productInfo={product} />)
+                    !this.state.data ? <Loading /> : this.state.data.results.map(product => <Shopitem productInfo={product} />)
                 }
+
             </div>
         )
     }
 }
 
 export default Shop;
+

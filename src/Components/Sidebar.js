@@ -1,9 +1,11 @@
 import React from "react";
-import { slide as Menu } from "react-burger-menu";
+import { stack as Menu } from "react-burger-menu";
 
 const Sidebar = (props) => {
+
+
     return (
-        <Menu {...props}>
+        <Menu right {...props} >
             <a className="menu-item" href="/">
                 Home
           </a>
@@ -16,6 +18,7 @@ const Sidebar = (props) => {
                 Contact Us
           </a>
         </Menu>
+
     );
 };
 
