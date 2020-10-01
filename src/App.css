@@ -202,6 +202,14 @@
       color: black;
    }
 
+   .contact-green {
+    color: green;
+  }
+
+  .contact-red {
+    color: red;
+  }
+
 }
 
 
@@ -426,6 +434,13 @@
     border-bottom: none;
   }
 
+  .contact-green {
+    color: green;
+  }
+
+  .contact-red {
+    color: red;
+  }
 
 }
 

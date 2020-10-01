@@ -28,8 +28,8 @@ class Contact extends React.Component {
                             <input type="email" name="email" />
                             <label>Message:</label>
                             <textarea id="subject" name="subject"></textarea>
-                            {status === "SUCCESS" ? <p>Thank you for sending us a message! We will get back to you very soon!</p> : <button className="contact-button">Send</button>}
-                            {status === "ERROR" && <p>Ooops! There was an error. Did you insert an email address?</p>}
+                            {status === "SUCCESS" ? <p className="contact-green">Thank you for sending us a message! We will get back to you very soon!</p> : <button className="contact-button">Send</button>}
+                            {status === "ERROR" && <p className="contact-red">Ooops! There was an error. Did you insert an email address and a message?</p>}
                         </form>
                     </div>
                 </div>
