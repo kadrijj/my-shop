@@ -1,15 +1,28 @@
 import React from "react";
-import BlogSlider from "./BlogSlider";
+import Balcony from "./Assets/balcony.png";
+import goaldigger from "./Assets/goaldigger.jpg";
 
 
 const Blog = () => {
     return (
         <>
-            <div className="main-content">
-                <div className="blog-text"><h1>Welcome to Chido!</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet auctor ligula, nec sagittis purus elementum posuere. Nullam augue diam, ornare ac finibus eget, sagittis nec augue. Maecenas ut sodales odio, hendrerit suscipit nulla. Pellentesque tempor et dolor nec viverra. Sed quis risus a massa auctor tempor sit amet ut nisi. </p>
+            <div className="blog">
+                <div className="blogpost">
+                    <img src={Balcony} />
+                    <div className="blogpost-copy">
+                        <h2>Tapas on your balcony</h2>
+                        <p>Small plates of food shared among friends. To get you started, we’ve got some easy tapas recipes, ranging from effortless to intense. And don’t forget; shareables are even better with a statement t-shirt</p>
+                    </div>
                 </div>
-                <BlogSlider />
+                <div className="blogpost">
+                    <img src={goaldigger} />
+                    <div className="blogpost-copy">
+                        <h2>Are you good at wasting your time right?</h2>
+                        <p>You have many ideas for little projects, but you are not sure where to start? Change your mindset! I sit in my chair
+                        I look at the street
+                        The neighbor returns. My smile of defeat</p>
+                    </div>
+                </div>
             </div>
         </>
     )
