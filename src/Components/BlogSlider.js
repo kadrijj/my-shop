@@ -27,13 +27,6 @@ class BlogSlider extends React.Component {
                         slidesToScroll: 2,
                         initialSlide: 2
                     }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
                 }
             ]
         };

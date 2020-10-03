@@ -1,6 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import ContactFrenchie from "./ContactFrenchie";
+
 
 class Contact extends React.Component {
     constructor(props) {

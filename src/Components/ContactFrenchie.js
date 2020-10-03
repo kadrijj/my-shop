@@ -15,7 +15,9 @@ const ContactFrenchie = () => {
 
     return (
         <div>
-            <Lottie options={defaultOptions} />
+            <Lottie options={defaultOptions}
+                width={100}
+                height={100} />
         </div >
     );
 }
