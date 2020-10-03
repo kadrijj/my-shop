@@ -16,7 +16,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="mobile-navbar">
-                <h1>Chido</h1>
+                <h1 className="title">Chido</h1>
                 <SideBar className="sidebar" pageWrapId={"page-wrap"} outerContainerId={"App"} />
             </div>
         </>
